@@ -8,11 +8,12 @@ const todos = [
 
 function getCompletedTodo(todos) {
   // Start coding here
+  return todos.filter((workComplete) => workComplete.topic && workComplete.completed );
 }
 
 getCompletedTodo(todos);
-
-/* 
+console.log(getCompletedTodo(todos))
+/* ;
 	Output:
 	[
 		{ topic: 'Doing pre-work', completed: true },
